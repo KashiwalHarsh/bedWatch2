@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../Components/Navbar/Navbar";
 import Patients from "../Components/Patients/Patients";
 import "./home.css";
+import Navbar from "../Components/Navbar/Navbar";
+import PatientNavbar from "../Components/Patientnavbar/PatientNavbar";
+
 export default function Home() {
   const [state, setState] = useState([]);
 
@@ -15,9 +17,8 @@ export default function Home() {
             : { backgroundColor: "black" }
         }
       >
-        <Navbar />
         <Patients state={state} setState={setState} />
-      </div>
+      </div>  
     </>
   );
 }

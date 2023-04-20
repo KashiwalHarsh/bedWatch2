@@ -2,6 +2,8 @@
     border: 1px solid black;
     height: 92vh;
      width: 90px;
+     position: fixed;
+     left: 0;
      border-radius: 20px;
      display: flex;
      flex-direction: column;
