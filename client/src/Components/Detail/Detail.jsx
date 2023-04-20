@@ -1,17 +1,19 @@
 import React from 'react'
 import './detail.css'
-export default function Detail({
-  Age,
-  Blood,
-  Condition,
-  Doctor,
-  Height,
-  Name,
-  PhoneNum,
-  Weight,
-  _id,
-  state,
-}) {
+export default function Detail(props) {
+  const {
+    Age,
+    Blood,
+    Condition,
+    Doctor,
+    Height,
+    Name,
+    PhoneNum,
+    Weight,
+    _id,
+    state,
+  } = props.pData;
+
   let x = state ? { color: "black" } : { color: "white" };
   return (
     <div className="detail">

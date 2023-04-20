@@ -10,7 +10,6 @@ export default function PatientCard({ state, setState, pData }) {
         const response = await fetch("http://localhost:4000/patientdata");
         const data = await response.json();
         setPatientData(data);
-        console.log(data);
       } catch (error) {
         console.log(error);
       } finally {
@@ -28,10 +27,7 @@ export default function PatientCard({ state, setState, pData }) {
         </>
       ) : (
         patientData.map((item, index) => {
-          console.log(item);
-          return (
-            <Detail pData={patientData} state={state} setState={setState} />
-          );
+          return <Detail pData={item} state={state} setState={setState} />;
         })
       )}
     </div>
