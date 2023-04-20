@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import PatientNavbar from "../Patientnavbar/PatientNavbar";
 import Detail from "../Detail/Detail";
-export default function PatientCard({ state, setState, pData }) {
+import "./Patients.css";
+
+export default function Patients({ state, setState, pData }) {
   const [patientData, setPatientData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -27,7 +29,11 @@ export default function PatientCard({ state, setState, pData }) {
         </>
       ) : (
         patientData.map((item, index) => {
-          return <Detail pData={item} state={state} setState={setState} />;
+          return (
+            <div className="detailWrapper">
+              <Detail pData={item} state={state} setState={setState} />
+            </div>
+          );
         })
       )}
     </div>

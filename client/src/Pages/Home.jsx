@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar/Navbar";
-import PatientCard from "../Components/PatientCard/PatientCard";
+import Patients from "../Components/Patients/Patients";
 import "./home.css";
 export default function Home() {
   const [state, setState] = useState([]);
@@ -16,7 +16,7 @@ export default function Home() {
         }
       >
         <Navbar />
-        <PatientCard state={state} setState={setState} />
+        <Patients state={state} setState={setState} />
       </div>
     </>
   );
