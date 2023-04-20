@@ -1,0 +1,118 @@
+.PatientNavbar{
+    width: calc(100vw - 90px);
+
+    height: 10px;
+    display: flex;
+    align-items: center;
+    padding: 30px;}
+
+   .PatientNavbar .left{
+        flex: 2;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+color: rgb(39, 14, 39);
+   }
+
+.switch{
+    width: 50px;
+    border: 1px solid black;
+    height: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+position: relative;
+transition: all 0.5s ease;
+}
+    .circle{
+        width: 20px;
+        height: 20px;
+       border-radius: 50%;
+       border: 1px solid black;
+       cursor: pointer;
+     
+    }
+    .active{
+    position: absolute;
+    cursor: pointer;
+right: 5px;
+    }
+
+    .PatientNavbar .left h1{
+    font-size: 25px;
+}
+    
+    .right{
+        flex: 5;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        margin-right: 40px;}
+
+        .head{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color:  rgb(39, 14, 39);}
+             .head .icon{
+                margin-bottom: 7px;
+                cursor: pointer;
+                font-size: 12px;
+              }
+           .head   h3{
+                font-size: 17.5px;
+              }
+        
+        .head2{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 19px;
+background-color: rgb(39, 14, 39);
+border-radius: 10px;
+
+            color: white;
+        }
+          .head2  .icon{
+                font-weight: bolder;
+            }
+          .head2  h3{
+                font-weight: 500;
+                font-size: 17.5px;
+            }
+          
+          .head3{
+            display: flex;
+            align-items: center;
+            gap: 10px;}
+           .head3 .button{
+                padding: 10px;
+                background-color:rgb(179, 154, 179) ;
+                outline: none;
+                border: none;
+                position: relative;
+                cursor: pointer;}
+
+                .head3 .icon{
+                    
+                    color:rgb(39, 14, 39) ;
+                    font-size: 15px;
+                }
+                
+               .head3  span{
+                    position: absolute;
+                    top: -1px;
+                  right: -2px;
+                    width: 15px;
+                    height: 15px;
+                    background-color: green;
+                    border-radius: 50%;
+                }
+            
+           
+            img{
+                height: 30px;
+            }
+          
