@@ -1,27 +1,67 @@
 import React from 'react'
-import './App.css'
-export default function Registerpage() {
+import './PatientCard.css'
+export default function PatientCard() {
   return (
-    <div className='Registerpage'>
-    <div className="wrapper">
-        <h1>Enter Patient Details</h1>
-        <form >
-            <input required type="text" placeholder='Name' />
-            <input required type="text" placeholder='Phone Number' />
-            <input required type="number" placeholder='Age' />
-            <input required type="number" placeholder='Blood Group' />
-            <input required type="number" placeholder='Height' />
-            <input required type="number" placeholder='weight' />
-            <input required type="text" placeholder='Doctor Assigned' />
-            <textarea id='textArea' rows={4} required
-            cols={37} placeholder='Medical Condition' />
-      
-            <span style={{fontSize:'12px',margin:'20px 0px',fontWeight:400}}>By creating an account ,I consent to the processing of my personal data in
-                accordance with the <b>PRIVACY POLICY</b>
-            </span>
-            <button style={{width:'40%',border:'none',padding:"15px 20px",backgroundColor:"teal",color:'white',cursor:"pointer",fontWeight:500
-        }}>CREATE</button>
-        </form>
+    <div>
+    <div className='userdetail'> 
+    <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="" className='userimage' />
+
+    <div className="userdetailname">
+        <div className="namedetails">
+            <h2>Name</h2>
+            <h4>:</h4>
+            <h3>Karan Arora</h3>
+        </div>
+        <div className="namedetails">
+            <h2>Phone Number</h2>
+            <h4>:</h4>
+            <h3>98989823</h3>
+        </div>
+        <div className="namedetails">
+            <h2>Age</h2>
+            <h4>:</h4>
+            <h3>38 years old</h3>
+        </div>
+        <div className="namedetails">
+            <h2>Blood type</h2>
+            <h4>:</h4>
+            <h3>A+</h3>
+        </div>
+        <div className="namedetails">
+            <h2>Height</h2>
+            <h4>:</h4>
+            <h3>185 Centimeter</h3>
+        </div>
+        <div className="namedetails">
+            <h2>Weight</h2>
+            <h4>:</h4>
+            <h3>83 Kg</h3>
+        </div>
+        <div className="namedetails">
+            <h2>Doctor Assigned</h2>
+            <h4>:</h4>
+            <h3>Dr. Harsh</h3>
+        </div>
+        <div className="namedetails">
+            <h2>Medical Condition</h2>
+            <h4>:</h4>
+            <h3>Asthma,Alergies,Coronary,Heart Disease</h3>
+        </div>
+    </div>
+    </div>
+    <div className='nextBox'> 
+    <div className='nextItem'>
+        <div className="detail">
+            <h2>Allocate Bed</h2>
+            <h4>:</h4>
+            <h3>QR</h3>
+        </div>
+        <div className="detail">
+            <h2>Deallocate Bed</h2>
+            <h4>:</h4>
+            <h3>QR</h3>
+        </div>      
+    </div>
     </div>
     </div>
   )
