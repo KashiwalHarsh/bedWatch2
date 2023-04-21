@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import PatientEntry from "./Components/PatientEntry/PatientEntry";
 import PatientCard from "./Components/PatientCard/PatientCard";
+import Scanner from "./Components/Scanner/Scanner";
 
 export default function App() {
   return (
@@ -14,9 +15,9 @@ export default function App() {
         <Router>
           <Routes>
             <Route exact path="/patient/:id" element={<PatientCard />} />
-
             <Route exact path="/patients" element={<Home />} />
             <Route exact path="/PatientEntry" element={<PatientEntry />} />
+            <Route exact path="/scan" element={<Scanner />} />
           </Routes>
         </Router>
       </div>
