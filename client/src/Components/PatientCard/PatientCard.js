@@ -29,8 +29,8 @@ export default function PatientCard() {
     
 
   return (
+    <div className='userdet'> 
     <div>
-    <div className='userdetail'> 
     <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="" className='userimage' />
 
     <div className="userdetailname">
@@ -78,17 +78,13 @@ export default function PatientCard() {
     </div>
     <div className='nextBox'> 
     <div className='nextItem'>
-        <div className="detail">
-            <h2>Allocate Bed</h2>
-            <h4>:</h4>
-            <a href="/scan">
-                <h3>QR</h3>
-            </a>
+        <div className="patientdetail">
+            <h2>Allocate Bed : <a href='/scan'>occupy</a> </h2>
+            
         </div>
-        <div className="detail">
-            <h2>Deallocate Bed</h2>
-            <h4>:</h4>
-            <h3>QR</h3>
+        <div className="patientdetail">
+        {/* <h2>Deallocate Bed : <a href='/scan'>unoccupy</a> </h2> */}
+
         </div>      
     </div>
     </div>

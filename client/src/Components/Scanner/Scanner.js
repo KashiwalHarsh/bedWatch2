@@ -3,7 +3,12 @@ import { useEffect } from 'react';
 
 const qrcodeRegionId = "html5qr-code-full-region";
 const style = {
-    width:"200px",
+    width:"100vw",
+    height:"100vh",
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center",
+    flex:1
 
 }
 
@@ -16,7 +21,7 @@ const style = {
 //     if (props.qrbox) {
 //         config.qrbox = props.qrbox;
 //     }
-//     if (props.aspectRatio) {
+//     if (props.aspectRatio) {scan
 //         config.aspectRatio = props.aspectRatio;
 //     }
 //     if (props.disableFlip !== undefined) {
@@ -27,9 +32,11 @@ const style = {
 
 const Scanner = (props) => {
 
+
     useEffect(() => {
       
         function success(result){
+            console.log(result)
             document.getElementById(qrcodeRegionId).innerHTML = `
                 <h2>Success</h2>
                 <p><a href = "${result}">${result}</a></p>
@@ -47,8 +54,8 @@ const Scanner = (props) => {
         }
         const html5QrcodeScanner = new Html5QrcodeScanner(qrcodeRegionId,{
             qrbox:{
-                width:250,
-                height:250
+                width:400,
+                height:400
             },
             fps:20,
         });
@@ -61,9 +68,11 @@ const Scanner = (props) => {
             });
         };
     }, []);
-
+    console.log("scanner")
     return (
-        <div id={qrcodeRegionId} />
+        <div style={style} className=''>
+            <div  id={qrcodeRegionId} />
+        </div>
     );
 };
 

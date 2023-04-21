@@ -1,6 +1,7 @@
 .app {
     width: 100vw;
     overflow: hidden;
+    font: 'Roboto','sans-serif';
 }
 
 * {
