@@ -81,12 +81,14 @@ app.get('/getBed',async(req,res)=>{
 })
 
 app.get('/ocupiedBed/:id',async(req,res)=>{
+    console.log(req.params);
         const update = await Qrcode.findOneAndUpdate({BedId:req.params.id},{$set:{Marked:1}},{new:true})
         console.log(update);
         res.json({status:200});
 
 })
 app.get('/unocupiedBed/:id',async(req,res)=>{
+    console.log(req.params);
         const update = await Qrcode.findOneAndUpdate({BedId:req.params.id},{$set:{Marked:0}},{new:true})
         console.log(update);
         res.json({status:200});

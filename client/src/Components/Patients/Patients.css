@@ -6,4 +6,15 @@
 
 }
 .patientcard{
+    margin-left: 30px;
+}
+.ocuupyContainer{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.occupyChild{
+    font-size: 1.5em;
+text-align: end;
+margin-right: 30px;
 }

@@ -1,5 +1,5 @@
 .PatientNavbar {
-    width: calc(100vw - 90px);
+    width: calc(100vw - 200px);
 
     height: 10px;
     display: flex;

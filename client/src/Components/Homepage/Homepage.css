@@ -1,0 +1,28 @@
+.Homepage{
+    margin-left: 30px;
+}
+.homeContainer nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.homeContainer nav div{
+    font-size: 2em;
+    font-weight: 700;
+}
+.homeContainer button{
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    border: 1px solid #280643;
+    background-color: white;
+    border-radius: 6px;
+    font-size: 1em;
+}
+.Mainsection{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}

@@ -18,8 +18,8 @@ export default function App() {
             <Route exact path="/patient/:id" element={<PatientCard />} />
             <Route exact path="/patients" element={<Home />} />
             <Route exact path="/PatientEntry" element={<PatientEntry />} />
-            <Route exact path="/scan" element={<Scanner />} />
-            <Route exact path="/" element={<Homepage />} />
+            {/* <Route exact path="/scan" element={<Scanner />} /> */}
+            {/* <Route exact path="/" element={<Homepage />} /> */}
           </Routes>
         </Router>
       </div>
